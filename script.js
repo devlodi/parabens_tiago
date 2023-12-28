@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         messageContainer.style.display = 'block';
         
         var typed = new Typed('#typewriter', {
-            strings: ["Feliz Aniversário, Tiago! <br><br> Desejamos a você muita saúde, sucesso e felicidades!"],
+            strings: ["Feliz Aniversário, Meu Querido! <br><br> Felicidades para ti man, te amuuu, que tu consiga tudo que quiseres na vida !"],
             typeSpeed: 50,
             backSpeed: 50,
             onComplete: function(self) {
