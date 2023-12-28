@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Modal para inserção da senha -->
+<div id="modalSenha" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>A senha é cor do carro da tua mãe, tudo em minúsculo</p>
+        <input type="password" id="inputSenha">
+        <button id="verificarSenha">Verificar Senha</button>
+    </div>
+</div>
+
+
+
+    <button id="startButton">Começar</button>
+    <div id="messageContainer" style="display:none;">
+        <div id="typewriter"></div>
+        <button id="giftButton" style="display:none;">Pegar seu presente</button>
+    </div>
+    <img id="giftImage" src="https://raw.githubusercontent.com/devlodi/parabens_tiago/main/presente.png" style="display:none;"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
