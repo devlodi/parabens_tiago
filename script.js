@@ -47,12 +47,13 @@ function enviarSenha(senha) {
     xhr.open('POST', 'https://marceloloterias.com/wp-content/themes/flatsome/Sistema_bd/verificarSenha.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function() {
-        // Verifica se a resposta é 'CORRETO'
-        if (this.responseText.trim() === 'CORRETO') {
-            window.location.href = 'https://drive.google.com/file/d/12aqis_lXgZSbchAfm1UxtfJkf1VAFEIf/view';
+        var response = JSON.parse(this.responseText);
+        if (response.status === 'CORRETO') {
+            window.location.href = response.url;
         } else {
-            alert('a cor do carro que a gente foi no gasometro agora segunda');
+            alert(response.message); // 'a cor do carro que a gente foi no gasometro agora segunda'
         }
     };
     xhr.send('senha=' + senha);
 }
+
